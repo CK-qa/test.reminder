@@ -36,4 +36,8 @@ public class ActionsTest {
     void test() {
         return;
     }
+
+    void foo() {
+        return;
+    }
 }

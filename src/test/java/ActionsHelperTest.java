@@ -33,7 +33,9 @@ public class ActionsHelperTest {
 
     //test;
 
-    void test() {
-       return;
+
+
+    void foo1() {
+        return;
     }
 }

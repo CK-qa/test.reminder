@@ -38,4 +38,8 @@ public class ActionsHelper {
     void test() {
         return;
     }
+
+    void foo1() {
+        return;
+    }
  }

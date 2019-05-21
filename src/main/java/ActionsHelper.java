@@ -42,4 +42,6 @@ public class ActionsHelper {
     void foo1() {
         return;
     }
+
+    //pewpew
  }

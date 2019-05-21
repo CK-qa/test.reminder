@@ -7,4 +7,6 @@ public class Actions {
     public String s;
 
     //test
+
+    //test
 }

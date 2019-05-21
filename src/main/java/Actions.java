@@ -33,4 +33,8 @@ public class Actions {
     int aa;
 
     //test
+
+    void test() {
+        return;
+    }
 }

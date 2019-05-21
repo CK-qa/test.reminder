@@ -32,4 +32,8 @@ public class ActionsHelperTest {
     String sl;
 
     //test;
+
+    void test() {
+       return;
+    }
 }

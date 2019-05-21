@@ -32,4 +32,8 @@ public class ActionsTest {
 
         }
     }
+
+    void test() {
+        return;
+    }
 }

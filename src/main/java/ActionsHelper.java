@@ -34,4 +34,8 @@ public class ActionsHelper {
     int bb;
 
     //todo
+
+    void test() {
+        return;
+    }
  }

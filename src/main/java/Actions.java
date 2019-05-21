@@ -30,4 +30,6 @@ public class Actions {
 
     StringBuffer stringBuffer;
 
+    int aa;
+
 }

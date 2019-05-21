@@ -30,4 +30,6 @@ public class ActionsHelper {
     //test
 //
     String s;
+
+    int bb;
  }

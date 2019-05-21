@@ -28,4 +28,6 @@ public class Actions {
 
     //test
 
+    StringBuffer stringBuffer;
+
 }

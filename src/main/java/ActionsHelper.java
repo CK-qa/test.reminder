@@ -28,4 +28,6 @@ public class ActionsHelper {
     //test
 
     //test
-}
+//
+    String s;
+ }

@@ -40,4 +40,6 @@ public class ActionsTest {
     void foo() {
         return;
     }
+
+    а
 }

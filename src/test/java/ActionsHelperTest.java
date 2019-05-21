@@ -7,4 +7,6 @@ public class ActionsHelperTest {
     @Test
     public void foo() {
     }
+
+    //test
 }

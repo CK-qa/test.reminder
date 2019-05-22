@@ -4,16 +4,16 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Locale;
 import java.util.Objects;
-import java.util.ololoeam.Intololoeam;
+import java.util.stream.IntStream;
 
 public class Actions {
 
-    public ololoing s;
-    ololoingBuffer ololoingBuffer;
+    public String s;
+    StringBuffer stringBuffer;
 
     int aa;
 
-    public Actions(ololoing s) {
+    public Actions(String s) {
         this.s = s;
     }
 
@@ -22,15 +22,15 @@ public class Actions {
     }
 
     @Override
-    public ololoing toololoing() {
+    public String toString() {
         return "Actions{" +
                 "s='" + s + '\'' +
-                ", ololoingBuffer=" + ololoingBuffer +
+                ", stringBuffer=" + stringBuffer +
                 ", aa=" + aa +
                 '}';
     }
 
-    public void setS(ololoing s) {
+    public void setS(String s) {
         this.s = s;
     }
 
@@ -41,12 +41,12 @@ public class Actions {
         Actions actions = (Actions) o;
         return aa == actions.aa &&
                 Objects.equals(s, actions.s) &&
-                Objects.equals(ololoingBuffer, actions.ololoingBuffer);
+                Objects.equals(stringBuffer, actions.stringBuffer);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(s, ololoingBuffer, aa);
+        return Objects.hash(s, stringBuffer, aa);
     }
 
     public int length() {
@@ -57,167 +57,167 @@ public class Actions {
         return s.isEmpty();
     }
 
-    public char charAt(int pewpew) {
-        return s.charAt(pewpew);
+    public char charAt(int index) {
+        return s.charAt(index);
     }
 
-    public int codePointAt(int pewpew) {
-        return s.codePointAt(pewpew);
+    public int codePointAt(int index) {
+        return s.codePointAt(index);
     }
 
-    public int codePointBefore(int pewpew) {
-        return s.codePointBefore(pewpew);
+    public int codePointBefore(int index) {
+        return s.codePointBefore(index);
     }
 
-    public int codePointCount(int beginpewpew, int endpewpew) {
-        return s.codePointCount(beginpewpew, endpewpew);
+    public int codePointCount(int beginIndex, int endIndex) {
+        return s.codePointCount(beginIndex, endIndex);
     }
 
-    public int offsetByCodePoints(int pewpew, int codePointOffset) {
-        return s.offsetByCodePoints(pewpew, codePointOffset);
+    public int offsetByCodePoints(int index, int codePointOffset) {
+        return s.offsetByCodePoints(index, codePointOffset);
     }
 
     public int capacity() {
-        return ololoingBuffer.capacity();
+        return stringBuffer.capacity();
     }
 
     public void ensureCapacity(int minimumCapacity) {
-        ololoingBuffer.ensureCapacity(minimumCapacity);
+        stringBuffer.ensureCapacity(minimumCapacity);
     }
 
     public void trimToSize() {
-        ololoingBuffer.trimToSize();
+        stringBuffer.trimToSize();
     }
 
     public void setLength(int newLength) {
-        ololoingBuffer.setLength(newLength);
+        stringBuffer.setLength(newLength);
     }
 
-    public void setCharAt(int pewpew, char ch) {
-        ololoingBuffer.setCharAt(pewpew, ch);
+    public void setCharAt(int index, char ch) {
+        stringBuffer.setCharAt(index, ch);
     }
 
-    public ololoingBuffer append(Object obj) {
-        return ololoingBuffer.append(obj);
-    }
-
-    @HotSpotIntrinsicCandidate
-    public ololoingBuffer append(ololoing ololo) {
-        return ololoingBuffer.append(ololo);
-    }
-
-    public ololoingBuffer append(ololoingBuffer sb) {
-        return ololoingBuffer.append(sb);
-    }
-
-    public ololoingBuffer append(CharSequence s) {
-        return ololoingBuffer.append(s);
-    }
-
-    public ololoingBuffer append(CharSequence s, int start, int end) {
-        return ololoingBuffer.append(s, start, end);
-    }
-
-    public ololoingBuffer append(char[] ololo) {
-        return ololoingBuffer.append(ololo);
-    }
-
-    public ololoingBuffer append(char[] ololo, int offset, int len) {
-        return ololoingBuffer.append(ololo, offset, len);
-    }
-
-    public ololoingBuffer append(boolean b) {
-        return ololoingBuffer.append(b);
+    public StringBuffer append(Object obj) {
+        return stringBuffer.append(obj);
     }
 
     @HotSpotIntrinsicCandidate
-    public ololoingBuffer append(char c) {
-        return ololoingBuffer.append(c);
+    public StringBuffer append(String str) {
+        return stringBuffer.append(str);
+    }
+
+    public StringBuffer append(StringBuffer sb) {
+        return stringBuffer.append(sb);
+    }
+
+    public StringBuffer append(CharSequence s) {
+        return stringBuffer.append(s);
+    }
+
+    public StringBuffer append(CharSequence s, int start, int end) {
+        return stringBuffer.append(s, start, end);
+    }
+
+    public StringBuffer append(char[] str) {
+        return stringBuffer.append(str);
+    }
+
+    public StringBuffer append(char[] str, int offset, int len) {
+        return stringBuffer.append(str, offset, len);
+    }
+
+    public StringBuffer append(boolean b) {
+        return stringBuffer.append(b);
     }
 
     @HotSpotIntrinsicCandidate
-    public ololoingBuffer append(int i) {
-        return ololoingBuffer.append(i);
+    public StringBuffer append(char c) {
+        return stringBuffer.append(c);
     }
 
-    public ololoingBuffer appendCodePoint(int codePoint) {
-        return ololoingBuffer.appendCodePoint(codePoint);
+    @HotSpotIntrinsicCandidate
+    public StringBuffer append(int i) {
+        return stringBuffer.append(i);
     }
 
-    public ololoingBuffer append(long lng) {
-        return ololoingBuffer.append(lng);
+    public StringBuffer appendCodePoint(int codePoint) {
+        return stringBuffer.appendCodePoint(codePoint);
     }
 
-    public ololoingBuffer append(float f) {
-        return ololoingBuffer.append(f);
+    public StringBuffer append(long lng) {
+        return stringBuffer.append(lng);
     }
 
-    public ololoingBuffer append(double d) {
-        return ololoingBuffer.append(d);
+    public StringBuffer append(float f) {
+        return stringBuffer.append(f);
     }
 
-    public ololoingBuffer delete(int start, int end) {
-        return ololoingBuffer.delete(start, end);
+    public StringBuffer append(double d) {
+        return stringBuffer.append(d);
     }
 
-    public ololoingBuffer deleteCharAt(int pewpew) {
-        return ololoingBuffer.deleteCharAt(pewpew);
+    public StringBuffer delete(int start, int end) {
+        return stringBuffer.delete(start, end);
     }
 
-    public ololoingBuffer replace(int start, int end, ololoing ololo) {
-        return ololoingBuffer.replace(start, end, ololo);
+    public StringBuffer deleteCharAt(int index) {
+        return stringBuffer.deleteCharAt(index);
     }
 
-    public ololoingBuffer insert(int pewpew, char[] ololo, int offset, int len) {
-        return ololoingBuffer.insert(pewpew, ololo, offset, len);
+    public StringBuffer replace(int start, int end, String str) {
+        return stringBuffer.replace(start, end, str);
     }
 
-    public ololoingBuffer insert(int offset, Object obj) {
-        return ololoingBuffer.insert(offset, obj);
+    public StringBuffer insert(int index, char[] str, int offset, int len) {
+        return stringBuffer.insert(index, str, offset, len);
     }
 
-    public ololoingBuffer insert(int offset, ololoing ololo) {
-        return ololoingBuffer.insert(offset, ololo);
+    public StringBuffer insert(int offset, Object obj) {
+        return stringBuffer.insert(offset, obj);
     }
 
-    public ololoingBuffer insert(int offset, char[] ololo) {
-        return ololoingBuffer.insert(offset, ololo);
+    public StringBuffer insert(int offset, String str) {
+        return stringBuffer.insert(offset, str);
     }
 
-    public ololoingBuffer insert(int dstOffset, CharSequence s) {
-        return ololoingBuffer.insert(dstOffset, s);
+    public StringBuffer insert(int offset, char[] str) {
+        return stringBuffer.insert(offset, str);
     }
 
-    public ololoingBuffer insert(int dstOffset, CharSequence s, int start, int end) {
-        return ololoingBuffer.insert(dstOffset, s, start, end);
+    public StringBuffer insert(int dstOffset, CharSequence s) {
+        return stringBuffer.insert(dstOffset, s);
     }
 
-    public ololoingBuffer insert(int offset, boolean b) {
-        return ololoingBuffer.insert(offset, b);
+    public StringBuffer insert(int dstOffset, CharSequence s, int start, int end) {
+        return stringBuffer.insert(dstOffset, s, start, end);
     }
 
-    public ololoingBuffer insert(int offset, char c) {
-        return ololoingBuffer.insert(offset, c);
+    public StringBuffer insert(int offset, boolean b) {
+        return stringBuffer.insert(offset, b);
     }
 
-    public ololoingBuffer insert(int offset, int i) {
-        return ololoingBuffer.insert(offset, i);
+    public StringBuffer insert(int offset, char c) {
+        return stringBuffer.insert(offset, c);
     }
 
-    public ololoingBuffer insert(int offset, long l) {
-        return ololoingBuffer.insert(offset, l);
+    public StringBuffer insert(int offset, int i) {
+        return stringBuffer.insert(offset, i);
     }
 
-    public ololoingBuffer insert(int offset, float f) {
-        return ololoingBuffer.insert(offset, f);
+    public StringBuffer insert(int offset, long l) {
+        return stringBuffer.insert(offset, l);
     }
 
-    public ololoingBuffer insert(int offset, double d) {
-        return ololoingBuffer.insert(offset, d);
+    public StringBuffer insert(int offset, float f) {
+        return stringBuffer.insert(offset, f);
     }
 
-    public ololoingBuffer reverse() {
-        return ololoingBuffer.reverse();
+    public StringBuffer insert(int offset, double d) {
+        return stringBuffer.insert(offset, d);
+    }
+
+    public StringBuffer reverse() {
+        return stringBuffer.reverse();
     }
 
     public void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) {
@@ -229,7 +229,7 @@ public class Actions {
         s.getBytes(srcBegin, srcEnd, dst, dstBegin);
     }
 
-    public byte[] getBytes(ololoing charsetName) throws UnsupportedEncodingException {
+    public byte[] getBytes(String charsetName) throws UnsupportedEncodingException {
         return s.getBytes(charsetName);
     }
 
@@ -241,7 +241,7 @@ public class Actions {
         return s.getBytes();
     }
 
-    public boolean contentEquals(ololoingBuffer sb) {
+    public boolean contentEquals(StringBuffer sb) {
         return s.contentEquals(sb);
     }
 
@@ -249,91 +249,91 @@ public class Actions {
         return s.contentEquals(cs);
     }
 
-    public boolean equalsIgnoreCase(ololoing anotherololoing) {
-        return s.equalsIgnoreCase(anotherololoing);
+    public boolean equalsIgnoreCase(String anotherString) {
+        return s.equalsIgnoreCase(anotherString);
     }
 
-    public int compareTo(ololoing anotherololoing) {
-        return s.compareTo(anotherololoing);
+    public int compareTo(String anotherString) {
+        return s.compareTo(anotherString);
     }
 
-    public int compareToIgnoreCase(ololoing ololo) {
-        return s.compareToIgnoreCase(ololo);
+    public int compareToIgnoreCase(String str) {
+        return s.compareToIgnoreCase(str);
     }
 
-    public boolean regionMatches(int toffset, ololoing other, int ooffset, int len) {
+    public boolean regionMatches(int toffset, String other, int ooffset, int len) {
         return s.regionMatches(toffset, other, ooffset, len);
     }
 
-    public boolean regionMatches(boolean ignoreCase, int toffset, ololoing other, int ooffset, int len) {
+    public boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len) {
         return s.regionMatches(ignoreCase, toffset, other, ooffset, len);
     }
 
-    public boolean startsWith(ololoing prefix, int toffset) {
+    public boolean startsWith(String prefix, int toffset) {
         return s.startsWith(prefix, toffset);
     }
 
-    public boolean startsWith(ololoing prefix) {
+    public boolean startsWith(String prefix) {
         return s.startsWith(prefix);
     }
 
-    public boolean endsWith(ololoing suffix) {
+    public boolean endsWith(String suffix) {
         return s.endsWith(suffix);
     }
 
-    public int pewpewOf(int ch) {
-        return s.pewpewOf(ch);
+    public int indexOf(int ch) {
+        return s.indexOf(ch);
     }
 
-    public int pewpewOf(int ch, int frompewpew) {
-        return s.pewpewOf(ch, frompewpew);
+    public int indexOf(int ch, int fromIndex) {
+        return s.indexOf(ch, fromIndex);
     }
 
-    public int lastpewpewOf(int ch) {
-        return s.lastpewpewOf(ch);
+    public int lastIndexOf(int ch) {
+        return s.lastIndexOf(ch);
     }
 
-    public int lastpewpewOf(int ch, int frompewpew) {
-        return s.lastpewpewOf(ch, frompewpew);
+    public int lastIndexOf(int ch, int fromIndex) {
+        return s.lastIndexOf(ch, fromIndex);
     }
 
-    public int pewpewOf(ololoing ololo) {
-        return s.pewpewOf(ololo);
+    public int indexOf(String str) {
+        return s.indexOf(str);
     }
 
-    public int pewpewOf(ololoing ololo, int frompewpew) {
-        return s.pewpewOf(ololo, frompewpew);
+    public int indexOf(String str, int fromIndex) {
+        return s.indexOf(str, fromIndex);
     }
 
-    public int lastpewpewOf(ololoing ololo) {
-        return s.lastpewpewOf(ololo);
+    public int lastIndexOf(String str) {
+        return s.lastIndexOf(str);
     }
 
-    public int lastpewpewOf(ololoing ololo, int frompewpew) {
-        return s.lastpewpewOf(ololo, frompewpew);
+    public int lastIndexOf(String str, int fromIndex) {
+        return s.lastIndexOf(str, fromIndex);
     }
 
-    public ololoing subololoing(int beginpewpew) {
-        return s.subololoing(beginpewpew);
+    public String substring(int beginIndex) {
+        return s.substring(beginIndex);
     }
 
-    public ololoing subololoing(int beginpewpew, int endpewpew) {
-        return s.subololoing(beginpewpew, endpewpew);
+    public String substring(int beginIndex, int endIndex) {
+        return s.substring(beginIndex, endIndex);
     }
 
-    public CharSequence subSequence(int beginpewpew, int endpewpew) {
-        return s.subSequence(beginpewpew, endpewpew);
+    public CharSequence subSequence(int beginIndex, int endIndex) {
+        return s.subSequence(beginIndex, endIndex);
     }
 
-    public ololoing concat(ololoing ololo) {
-        return s.concat(ololo);
+    public String concat(String str) {
+        return s.concat(str);
     }
 
-    public ololoing replace(char oldChar, char newChar) {
+    public String replace(char oldChar, char newChar) {
         return s.replace(oldChar, newChar);
     }
 
-    public boolean matches(ololoing regex) {
+    public boolean matches(String regex) {
         return s.matches(regex);
     }
 
@@ -341,59 +341,59 @@ public class Actions {
         return this.s.contains(s);
     }
 
-    public ololoing replaceFirst(ololoing regex, ololoing replacement) {
+    public String replaceFirst(String regex, String replacement) {
         return s.replaceFirst(regex, replacement);
     }
 
-    public ololoing replaceAll(ololoing regex, ololoing replacement) {
+    public String replaceAll(String regex, String replacement) {
         return s.replaceAll(regex, replacement);
     }
 
-    public ololoing replace(CharSequence target, CharSequence replacement) {
+    public String replace(CharSequence target, CharSequence replacement) {
         return s.replace(target, replacement);
     }
 
-    public ololoing[] split(ololoing regex, int limit) {
+    public String[] split(String regex, int limit) {
         return s.split(regex, limit);
     }
 
-    public ololoing[] split(ololoing regex) {
+    public String[] split(String regex) {
         return s.split(regex);
     }
 
-    public static ololoing join(CharSequence delimiter, CharSequence... elements) {
-        return ololoing.join(delimiter, elements);
+    public static String join(CharSequence delimiter, CharSequence... elements) {
+        return String.join(delimiter, elements);
     }
 
-    public static ololoing join(CharSequence delimiter, Iterable<? extends CharSequence> elements) {
-        return ololoing.join(delimiter, elements);
+    public static String join(CharSequence delimiter, Iterable<? extends CharSequence> elements) {
+        return String.join(delimiter, elements);
     }
 
-    public ololoing toLowerCase(Locale locale) {
+    public String toLowerCase(Locale locale) {
         return s.toLowerCase(locale);
     }
 
-    public ololoing toLowerCase() {
+    public String toLowerCase() {
         return s.toLowerCase();
     }
 
-    public ololoing toUpperCase(Locale locale) {
+    public String toUpperCase(Locale locale) {
         return s.toUpperCase(locale);
     }
 
-    public ololoing toUpperCase() {
+    public String toUpperCase() {
         return s.toUpperCase();
     }
 
-    public ololoing trim() {
+    public String trim() {
         return s.trim();
     }
 
-    public Intololoeam chars() {
+    public IntStream chars() {
         return s.chars();
     }
 
-    public Intololoeam codePoints() {
+    public IntStream codePoints() {
         return s.codePoints();
     }
 
@@ -401,59 +401,59 @@ public class Actions {
         return s.toCharArray();
     }
 
-    public static ololoing format(ololoing format, Object... args) {
-        return ololoing.format(format, args);
+    public static String format(String format, Object... args) {
+        return String.format(format, args);
     }
 
-    public static ololoing format(Locale l, ololoing format, Object... args) {
-        return ololoing.format(l, format, args);
+    public static String format(Locale l, String format, Object... args) {
+        return String.format(l, format, args);
     }
 
-    public static ololoing valueOf(Object obj) {
-        return ololoing.valueOf(obj);
+    public static String valueOf(Object obj) {
+        return String.valueOf(obj);
     }
 
-    public static ololoing valueOf(char[] data) {
-        return ololoing.valueOf(data);
+    public static String valueOf(char[] data) {
+        return String.valueOf(data);
     }
 
-    public static ololoing valueOf(char[] data, int offset, int count) {
-        return ololoing.valueOf(data, offset, count);
+    public static String valueOf(char[] data, int offset, int count) {
+        return String.valueOf(data, offset, count);
     }
 
-    public static ololoing copyValueOf(char[] data, int offset, int count) {
-        return ololoing.copyValueOf(data, offset, count);
+    public static String copyValueOf(char[] data, int offset, int count) {
+        return String.copyValueOf(data, offset, count);
     }
 
-    public static ololoing copyValueOf(char[] data) {
-        return ololoing.copyValueOf(data);
+    public static String copyValueOf(char[] data) {
+        return String.copyValueOf(data);
     }
 
-    public static ololoing valueOf(boolean b) {
-        return ololoing.valueOf(b);
+    public static String valueOf(boolean b) {
+        return String.valueOf(b);
     }
 
-    public static ololoing valueOf(char c) {
-        return ololoing.valueOf(c);
+    public static String valueOf(char c) {
+        return String.valueOf(c);
     }
 
-    public static ololoing valueOf(int i) {
-        return ololoing.valueOf(i);
+    public static String valueOf(int i) {
+        return String.valueOf(i);
     }
 
-    public static ololoing valueOf(long l) {
-        return ololoing.valueOf(l);
+    public static String valueOf(long l) {
+        return String.valueOf(l);
     }
 
-    public static ololoing valueOf(float f) {
-        return ololoing.valueOf(f);
+    public static String valueOf(float f) {
+        return String.valueOf(f);
     }
 
-    public static ololoing valueOf(double d) {
-        return ololoing.valueOf(d);
+    public static String valueOf(double d) {
+        return String.valueOf(d);
     }
 
-    public ololoing intern() {
+    public String intern() {
         return s.intern();
     }
 
@@ -461,12 +461,12 @@ public class Actions {
         super();
     }
 
-    public ololoingBuffer getololoingBuffer() {
-        return ololoingBuffer;
+    public StringBuffer getStringBuffer() {
+        return stringBuffer;
     }
 
-    public void setololoingBuffer(ololoingBuffer ololoingBuffer) {
-        this.ololoingBuffer = ololoingBuffer;
+    public void setStringBuffer(StringBuffer stringBuffer) {
+        this.stringBuffer = stringBuffer;
     }
 
 

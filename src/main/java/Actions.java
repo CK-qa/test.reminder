@@ -37,6 +37,10 @@ public class Actions {
                 '}';
     }
 
+    public void setS(String s) {
+        this.s = s;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

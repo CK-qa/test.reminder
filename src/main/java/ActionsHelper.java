@@ -80,4 +80,8 @@ public class ActionsHelper {
                 ", bb=" + bb +
                 '}';
     }
+
+    public void setBb(int bb) {
+        this.bb = bb;
+    }
 }

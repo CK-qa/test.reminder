@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -6,6 +7,11 @@ public class ActionsHelperTest {
 
     @Test
     public void foo() {
+    }
+
+    @Before
+    public void setUp() throws Exception {
+
     }
 
     public ActionsHelperTest(String sl) {

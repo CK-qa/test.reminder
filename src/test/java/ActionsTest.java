@@ -27,6 +27,14 @@ public class ActionsTest {
 
     //test
 
+    @Override
+    public String toString() {
+        return "ActionsTest{" +
+                "a=" + a +
+                ", s=" + s +
+                '}';
+    }
+
     //test
 
     //test;

@@ -9,6 +9,13 @@ public class ActionsHelperTest {
     public void foo() {
     }
 
+    @Override
+    public String toString() {
+        return "ActionsHelperTest{" +
+                "sl='" + sl + '\'' +
+                '}';
+    }
+
     @Before
     public void setUp() throws Exception {
 

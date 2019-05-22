@@ -57,5 +57,11 @@ public class ActionsHelper {
         this.s = s;
     }
 
-
+    @Override
+    public String toString() {
+        return "ActionsHelper{" +
+                "s='" + s + '\'' +
+                ", bb=" + bb +
+                '}';
+    }
 }

@@ -26,6 +26,15 @@ public class Actions {
 
     //test
 
+    @Override
+    public String toString() {
+        return "Actions{" +
+                "s='" + s + '\'' +
+                ", stringBuffer=" + stringBuffer +
+                ", aa=" + aa +
+                '}';
+    }
+
     public Actions(String s) {
         this.s = s;
     }

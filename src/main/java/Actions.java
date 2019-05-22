@@ -31,6 +31,7 @@ public class Actions {
                 '}';
     }
 
+
     public void setS(String s) {
         this.s = s;
     }

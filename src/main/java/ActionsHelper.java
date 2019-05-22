@@ -2,13 +2,10 @@ import java.util.Objects;
 
 public class ActionsHelper {
 
-    public ActionsHelper(String s) {
-        this.s = s;
-    }
-
-    public String foo() {
-        return "";
-    }
+    //test
+//
+    String s;
+    int bb;
 
     //test
 
@@ -35,11 +32,13 @@ public class ActionsHelper {
 
     //test
 
-    //test
-//
-    String s;
+    public ActionsHelper(String s) {
+        this.s = s;
+    }
 
-    int bb;
+    public String foo() {
+        return "";
+    }
 
     //todo
 

@@ -2,11 +2,8 @@ import java.util.Objects;
 
 public class Actions {
 
-    private int a() {
-        return 0;
-    }
-
     public String s;
+    StringBuffer stringBuffer;
 
     //test
 
@@ -27,6 +24,15 @@ public class Actions {
     //test
 
     //test
+    int aa;
+
+    public Actions(String s) {
+        this.s = s;
+    }
+
+    private int a() {
+        return 0;
+    }
 
     @Override
     public String toString() {
@@ -56,10 +62,6 @@ public class Actions {
         return Objects.hash(s, stringBuffer, aa);
     }
 
-    public Actions(String s) {
-        this.s = s;
-    }
-
     public StringBuffer getStringBuffer() {
         return stringBuffer;
     }
@@ -67,10 +69,6 @@ public class Actions {
     public void setStringBuffer(StringBuffer stringBuffer) {
         this.stringBuffer = stringBuffer;
     }
-
-    StringBuffer stringBuffer;
-
-    int aa;
 
     //test
 

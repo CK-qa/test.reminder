@@ -1,5 +1,9 @@
 public class ActionsHelper {
 
+    public ActionsHelper(String s) {
+        this.s = s;
+    }
+
     public String foo() {
         return "";
     }

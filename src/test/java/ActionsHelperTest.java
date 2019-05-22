@@ -8,7 +8,10 @@ public class ActionsHelperTest {
     public void foo() {
     }
 
-    //test
+    public ActionsHelperTest(String sl) {
+        this.sl = sl;
+    }
+//test
 
     //test
 

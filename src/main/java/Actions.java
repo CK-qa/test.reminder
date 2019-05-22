@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Actions {
 
     private int a() {
@@ -33,6 +35,21 @@ public class Actions {
                 ", stringBuffer=" + stringBuffer +
                 ", aa=" + aa +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Actions actions = (Actions) o;
+        return aa == actions.aa &&
+                Objects.equals(s, actions.s) &&
+                Objects.equals(stringBuffer, actions.stringBuffer);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(s, stringBuffer, aa);
     }
 
     public Actions(String s) {

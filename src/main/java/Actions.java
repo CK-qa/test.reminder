@@ -29,6 +29,13 @@ public class Actions {
     //test
 
 
+    public StringBuffer getStringBuffer() {
+        return stringBuffer;
+    }
+
+    public void setStringBuffer(StringBuffer stringBuffer) {
+        this.stringBuffer = stringBuffer;
+    }
 
     StringBuffer stringBuffer;
 

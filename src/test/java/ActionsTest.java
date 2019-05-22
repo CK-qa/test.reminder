@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class ActionsTest {
@@ -41,5 +43,8 @@ public class ActionsTest {
         return;
     }
 
+    @Test
+    public void name() {
 
+    }
 }

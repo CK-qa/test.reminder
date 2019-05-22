@@ -34,6 +34,10 @@ public class ActionsHelperTest {
     //test;
 
 
+    @Test
+    public void name() {
+
+    }
 
     void foo1() {
         return;

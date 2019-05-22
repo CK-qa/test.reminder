@@ -43,8 +43,14 @@ public class ActionsHelper {
         return;
     }
 
+    public String getS() {
+        return s;
+    }
+
+    public void setS(String s) {
+        this.s = s;
+    }
 
 
-
-    //pewpew
+//pewpew
  }

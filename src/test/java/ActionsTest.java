@@ -15,20 +15,6 @@ public class ActionsTest {
     Integer a;
 
 
-    //test
-
-    //test
-
-    //test
-
-    //test
-
-    //test//test
-
-    //test
-
-    //test
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -51,9 +37,9 @@ public class ActionsTest {
                 '}';
     }
 
-    //test
 
-    //test;
+
+    ;
 //
 
     StringBuffer s;

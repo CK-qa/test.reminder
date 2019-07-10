@@ -8,6 +8,8 @@ import java.util.stream.IntStream;
 
 public class Actions {
 
+    //test
+
     public String s;
     StringBuffer stringBuffer;
 

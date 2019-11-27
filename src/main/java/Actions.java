@@ -477,6 +477,4 @@ public class Actions {
     void foo() {
         return;
     }
-
-    //pewpew
 }

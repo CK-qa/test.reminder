@@ -2,35 +2,8 @@ import java.util.Objects;
 
 public class ActionsHelper {
 
-
-//
     String s;
     int bb;
-
-
-
-
-
-
-
-
-
-
-
-    // test
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public ActionsHelper(String s) {
         this.s = s;

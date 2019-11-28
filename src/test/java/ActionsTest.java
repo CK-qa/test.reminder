@@ -9,7 +9,6 @@ public class ActionsTest {
 
     @Before
     public void setUp() throws Exception {
-
     }
 
     Integer a;

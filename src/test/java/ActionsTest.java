@@ -11,9 +11,7 @@ public class ActionsTest {
     public void setUp() throws Exception {
 
     }
-
     Integer a;
-
 
     @Override
     public boolean equals(Object o) {

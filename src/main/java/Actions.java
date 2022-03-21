@@ -13,7 +13,7 @@ public class Actions {
     public String s;
     StringBuffer stringBuffer;
 
-    int aa;
+    int aaaaa;
 
     public Actions(String s) {
         this.s = s;
